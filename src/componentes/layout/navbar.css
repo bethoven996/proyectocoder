@@ -1,4 +1,32 @@
-.navContainer {
-  background-color: rgb(185, 112, 16);
+.Nav-Container {
   width: 100%;
+  background-color: rgb(218, 229, 231);
+  display: flex;
+  height: 20%;
+}
+.Logo {
+  width: 10%;
+  height: 100%;
+}
+.title {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 200%;
+  font-style: oblique;
+  color: black;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.lista {
+  font-family: cursive;
+  display: flex;
+  list-style: none;
+  padding: 30px;
+  margin-left: 17%;
+}
+
+.lista li {
+  margin-right: 15px;
 }

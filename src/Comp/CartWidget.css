@@ -1,0 +1,18 @@
+.Witget-Content {
+  display: flex;
+  margin: 10px;
+  justify-content: flex-start;
+  height: 30%;
+  margin-left: 150px;
+}
+.Witget-Content div {
+  margin-right: 45px;
+  margin-left: 30px;
+}
+.Witget-Content p {
+  font-family: "Latin Modern Roman";
+  font-style: oblique;
+  color: blueviolet;
+  font-size: small;
+  width: 30px;
+}

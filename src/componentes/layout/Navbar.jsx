@@ -1,23 +1,34 @@
-import CartWidget from "../../Comp/CartWidget";
+import CartWidget from "../Comp/CartWidget";
 import "./Navbar.css";
-import ItemListContainer from "../ItemListContainer";
+import { Outlet, Link } from "react-router-dom";
+
 function Navbar() {
   return (
-    <div className="Nav-Container">
-      <img
-        className="Logo"
-        src="https://res.cloudinary.com/do9rcgcca/image/upload/v1686937500/logoTrabajoReact_w8o7jq.jpg"
-        alt=""
-      />
-      <div>
-        <ItemListContainer saludo={"Betolos"} />
+    <div>
+      <div className="Nav-Container">
+        <Link to={"/"}>
+          <img
+            style={{ width: "90px", height: "100%" }}
+            className="Logo"
+            src="https://res.cloudinary.com/do9rcgcca/image/upload/v1686937500/logoTrabajoReact_w8o7jq.jpg"
+            alt=""
+          />
+        </Link>
+
+        <ul className="lista">
+          <Link to={"/"}>
+            <li>Todas </li>
+          </Link>
+          <Link to={"/category/urbanas"}>
+            <li>Urbanas</li>
+          </Link>
+          <Link to={"/category/deportivas"}>
+            <li>Deportivas</li>
+          </Link>
+        </ul>
+        <CartWidget />
       </div>
-      <ul className="lista">
-        <li>Inicio</li>
-        <li>Contacto</li>
-        <li>Productos</li>
-      </ul>
-      <CartWidget />
+      <Outlet />
     </div>
   );
 }

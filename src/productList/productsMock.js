@@ -1,6 +1,5 @@
 export const products = [
   {
-    id: 1,
     title: "Rouser Ns 200",
     price: 7500,
     stock: 4,
@@ -9,7 +8,6 @@ export const products = [
     img: "https://res.cloudinary.com/do9rcgcca/image/upload/v1688148687/bja3_cn37oo.jpg",
   },
   {
-    id: 2,
     title: "Kawasaki ninja 400",
     price: 11500,
     stock: 3,
@@ -18,7 +16,6 @@ export const products = [
     img: "https://res.cloudinary.com/do9rcgcca/image/upload/v1688148810/6b80d839-96ba-482a-9348-c8de27ae9063_jg7bpd.png",
   },
   {
-    id: 3,
     title: "Honda Tortado 250",
     price: 9500,
     stock: 3,
@@ -27,7 +24,6 @@ export const products = [
     img: "https://res.cloudinary.com/do9rcgcca/image/upload/v1688148908/maxresdefault_zhfvev.jpg",
   },
   {
-    id: 4,
     title: "Honda wave 110",
     price: 2500,
     stock: 6,
@@ -37,7 +33,6 @@ export const products = [
     img: "https://res.cloudinary.com/do9rcgcca/image/upload/v1688149012/M0001200850-2023_1_ennaht.jpg",
   },
   {
-    id: 5,
     title: "Cuatriciclo Yahama 400CC",
     price: 10500,
     stock: 2,

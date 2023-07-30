@@ -14,7 +14,7 @@ function Navbar() {
             alt=""
           />
         </Link>
-
+        <Link to={"/admin"}>Administrador</Link>
         <ul className="lista">
           <Link to={"/"}>
             <li>Todas </li>

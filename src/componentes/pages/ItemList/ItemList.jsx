@@ -1,5 +1,7 @@
 import ProductCart from "../../Comp/ProductCart";
+import FadeLoader from "react-spinners/FadeLoader";
 function ItemList({ items }) {
+  let arr = [1, 2, 3, 4];
   return (
     <div
       style={{
@@ -10,9 +12,11 @@ function ItemList({ items }) {
         paddingTop: "20px",
       }}
     >
-      {items.map((item) => {
-        return <ProductCart item={item} key={item.id} />;
-      })}
+      {items.length > 0
+        ? items.map((item) => {
+            return <ProductCart item={item} key={item.id} />;
+          })
+        : arr.map((elemento) => <FadeLoader key={elemento} color="#36d7b7" />)}
     </div>
   );
 }

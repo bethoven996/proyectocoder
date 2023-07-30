@@ -9,18 +9,25 @@ import {
 import { Link } from "react-router-dom";
 function ProductCart({ item }) {
   return (
-    <Card sx={{ maxWidth: 345, margin: "10px" }}>
+    <Card
+      sx={{
+        maxWidth: 345,
+        margin: "10px",
+      }}
+    >
       <CardMedia
-        sx={{ height: 140, backgroundColor: "grey" }}
+        sx={{
+          height: 140,
+        }}
         image={item.img}
         title={item.title}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {item.price}
+          {item.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {item.description}
+          Precio:$ {item.price}
         </Typography>
       </CardContent>
       <CardActions>

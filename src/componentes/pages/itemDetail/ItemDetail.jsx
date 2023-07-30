@@ -1,6 +1,6 @@
 import Counterconteiner from "../../Counter/Counterconteiner";
 import ProductCart from "../../Comp/ProductCart";
-function ItemDetail({ item, agregarAlCarrito, stock }) {
+function ItemDetail({ item, agregarAlCarrito, stock, CantidadEnCarrito }) {
   return (
     <div>
       <div
@@ -10,9 +10,13 @@ function ItemDetail({ item, agregarAlCarrito, stock }) {
           justifyContent: "center",
         }}
       >
-        <ProductCart sx={{}} item={item} key={item.id} />
+        <ProductCart item={item} key={item.id} />
       </div>
-      <Counterconteiner agregarAlCarrito={agregarAlCarrito} stock={stock} />
+      <Counterconteiner
+        agregarAlCarrito={agregarAlCarrito}
+        stock={stock}
+        CantidadEnCarrito={CantidadEnCarrito}
+      />
     </div>
   );
 }

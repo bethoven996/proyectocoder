@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Counter from "./Counter";
-function Counterconteiner({ agregarAlCarrito, stock }) {
-  const [contador, setContador] = useState(1);
+function Counterconteiner({ agregarAlCarrito, stock, CantidadEnCarrito = 1 }) {
+  const [contador, setContador] = useState(CantidadEnCarrito);
 
   return (
     <div>
